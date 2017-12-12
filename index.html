@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!--<link rel="stylesheet" type="text/css" href="css/estilo.css">-->
+	<link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap-4.0.0-alpha.6-dist/css/style.css" rel="stylesheet">
+	<link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.labels {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-left: 30px;
+			color: black;
+			font-weight: bold;
+		}
+
+		.box {
+			border: 1px 1px black;
+			margin-left: 60px;
+			float: left
+		}
+
+		.btn-outline-primary {
+			color: orange;
+			border-color: orange;
+			background-color: black
+		}
+
+		.btn-primary {
+			color: orange;
+			background-color: black;
+			border-color: orange;
+		}
+
+		.btn-primary:hover {
+			color: #fff;
+			background-color: orange;
+			border-color: orange;
+		}
+
+		.footer {
+			background-color: black;
+			color: orange;
+			padding: .5rem 1rem;
+		}
+
+		.imgfooter{
+				height: 30px;
+				width: 30px
+			}
+	</style>
+</head>
+
+<body background="img/175334-OW5Q7P-359.png" bgproperties="fixed">
+
+	<!--<div class="container-fluid">
+		<a id="home"></a>
+		<div id="home" class="linha">
+			<div class="col-md-1 col-lg-2 col-sm-2 esconde"></div>
+			
+			<div class="col-dp-12 col-dm-10 col-dg-8 col-deg-8">	
+				<div class="header">
+
+					<div class="logo">
+						<a href="/sixfit/">
+							<img src="img/logo.png" alt="Logo" Title="SixFit - Página Inicial">
+						</a>
+					</div>
+					
+					<div>
+						<ul class="topnav" id="myTopnav">
+							<li><a class="active" href="#home">Menu</a></li>
+							<li><a class="home" href="javascript:;">Home</a></li>
+							<li><a class="news" href="javascript:;">O Que Fazemos</a></li>
+							<li><a class="about" href="javascript:;">Quem Somos</a></li>
+							<li><a class="contact" href="javascript:;">Contato</a></li>
+							<li id="login"><button id="myBtn" class="botaologin">LOGIN</button></li>
+							<!--<li id="logout">
+								<a href="logout">
+									<button id="logout" class="botaologin">LOGOUT</button>
+									<a>
+									</a>
+							</li>
+							<li><span id="emailUsuario"></span></li>
+						</ul>
+					</div>
+
+					<div style="cursor:pointer" onclick="openNav()">
+						<img src="img/menu.png" alt="Logo" Title="SixFit - Página Inicial">
+					</div>
+					
+					<div id="mySidenav" class="sidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<ul>
+							<li><a href="javascript:;" click="scroll('home')">Home</a></li>
+							<li><a href="javascript:;" click="scroll('news')">O Que Fazemos</a></li>
+							<li><a href="javascript:;" click="scroll('about')">Quem Somos</a></li>
+							<li><a href="javascript:;" click="scroll('contact')">Contato</a></li>
+							<button id="myBtn" class="botaologin">LOGIN</button>	
+						</ul>	
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-dm-1 col-dg-2 col-deg-2 esconde"></div>
+		</div>
+
+
+		<div class="linha">
+			<div class="col-dp-12 col-dm-12 col-dg-12 col-deg-12">
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<img src="img/slider1.jpg" style="width:100%">
+						<div class="text">
+							<h1 style="font-size:300%;">
+								<span style="color:#E27D15">MONITORE</span> SEU PROGRESSO
+								<h1>
+									<p>
+
+										Nós sabemos que cada quilometro importa para você, por isso entregamos cada detalhe: ritmo, distância, rota e recordes pessoais
+										com muita precisão e ainda mais controle sobre os dados que você deseja ver durante sua corrida.
+										<br>
+									</p>
+						</div>
+					</div>
+
+					<div class="mySlides fade">
+						<img src="img/slider2.jpg" style="width:100%">
+						<div class="text">
+							<h1 style="font-size:300%;">
+								<span style="color:#E27D15">CORRE</span> JUNTO
+								<h1>
+									<p>Nunca foi tão fácil comparar e competir com seus amigos e corredores do mundo todo. Tudo que você precisa fazer
+										é colocar as hashtags específicas ao compartilhar suas corridas nas redes sociais..
+										<br>
+									</p>
+						</div>
+					</div>
+
+					<!--<a class="prev">&#10094;</a>
+					<a class="next">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+		</div>-->
+
+	<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md navbar-light bg-faded">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" alt="Logo" Title="SixFit - Página Inicial">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:;">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:;">O que fazemos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:;">Quem somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:;">Contato</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link active" href="javascript:;">Indicações</a>
+				</li>
+
+				<li class="nav-item">
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">LOGIN</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="col-md-12 col-lg-12 col-lg-12">
+		<div class="col-md-3 col-lg-3 col-lg-3"></div>
+		<div class="col-md-3 col-lg-3 col-lg-3">
+			<div class="box">
+				<form name="meuForm" method="post" id="form" action="disparaEmail">
+					<br>
+					<br>
+					<br>
+					<label class="labels">Nome do amigo</label>
+					<input type="text" class="input_text" name="nome" id="nome">
+					<span></span>
+					<br>
+
+					<label class="labels">Email do amigo</label>
+					<input type="text" class="input_text" name="email" id="email">
+					<span></span>
+					<br>
+
+					<label class="labels">Telefone do amigo</label>
+					<input type="text" class="input_text" name="tel" id="tel">
+					<span></span>
+					<br>
+
+					<button class="botao1" onclick="validar()">ENVIAR CONVITE </button>
+					<!--<input type="submit" class="botao1" title="Faça agora o seu Cadastro!" onclick="validar()">ENVIAR CONVITE</div>-->
+				</form>
+			</div>
+		</div>
+		<div class="col-md-3 col-lg-3 col-lg-3"></div>
+	</div>
+
+
+	<nav class="navbar fixed-bottom navbar-inverse footer">
+		<div class="col-md-12 col-lg-12 col-lg-12">
+			<div class="col-sm-12 col-md-5 col-lg-5 box">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Digite o email" onclick="limpar('email')">
+						<small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar o seu email com ninguém.</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputTel">Telefone</label>
+						<input type="tel" class="form-control" id="inputTel" placeholder="Telefone" onclick="limpar('tel')">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Mensagem</label>
+						<textarea class="form-control" id="message" rows="3" placeholder="Digite um comentário..." onclick="limpar('feedback')"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-primary" onclick="">ENVIAR</button>
+				</form>
+			</div>
+
+			<div class="col-sm-12 col-md-5 col-lg-5 box">
+				<br>
+				<div>
+					<img src="img/noun_475132_cc.svg" class="imgfooter" alt="telefone IFTM">
+					<h5>Endereço IFTM</h5>
+					<p>R. Blanche Galassi, 150 - Morada da Colina, Uberlândia - MG, 38400-364</p>
+				</div>
+				<div>
+					<img src="img/noun_1249351_cc.svg" class="imgfooter" alt="telefone IFTM">
+					<h5>Telefone IFTM</h5>
+					<p>(34) 3221-4800</p>
+				</div>
+				<div>
+					<img src="img/noun_1254038_cc.svg" class="imgfooter" alt="Email IFTM">
+					<h5>Email IFTM</h5>
+					<p>sistemasiftm@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12 box"><br><br>
+			<div class="col-sm-12 col-md-10 col-lg-10"></div>
+			<div class="col-sm-12 col-md-2 col-lg-2">
+				<a href="http://www.iftm.edu.br/uberlandiacentro">
+					<img src="img/iftm.png" title="Conheça mais sobre a nossa Universidade" alt="Logo IFTM" onclick="newPopup()">
+				</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--<div id="contact" class="linha rodape">
+		<a name="contato"></a>
+		<div class="linha">
+			<div class="col-dg-1 col-deg-1 esconde escondemeio"></div>
+			<div class="col-dp-12 col-dm-8 col-dg-7 col-deg-7">
+				<h4>Contato</h4>
+				<form name="meuForm" method="post" id="formulario" action="disparaEmail">
+					<div class="box">
+						<label>
+							<span>Nome Completo:</span>
+							<input type="text" class="input_text" name="nome" id="name" onclick="limpar('name')">
+						</label>
+						<label>
+							<span>Email:</span>
+							<input type="text" class="input_text" name="email" id="email" onclick="limpar('email')">
+						</label>
+						<label>
+							<span>Assunto:</span>
+							<input type="text" class="input_text" name="assunto" id="subject" onclick="limpar('subject')">
+						</label>
+						<label>
+							<span>Mensagem</span>
+							<textarea class="message" name="feedback" id="feedback" onclick="limpar('feedback')"></textarea>
+							<br>
+							<div class="botao1" title="Faça agora o seu Cadastro!" onclick="validar()">Enviar</div>
+						</label>
+					</div>
+				</form>
+			</div>
+			<div class="col-dm-4 col-dg-3 col-deg-3 esconde">
+				<div class="linha">
+					<div class="col-dm-2 col-dg-1 col-deg-1 esconde"></div>
+
+					<div class="col-dm-8 col-dg-10 col-deg-10 esconde">
+						<div class="contato1">
+							<img src="/img/icon1.png" alt="Logo" Title="SixFit - Página Inicial">
+							<h3>ENDEREÇO</h3>
+							<p>Endereço da Faculdade</p>
+						</div>
+						<div class="contato2">
+							<img src="img/icon2.png" alt="Logo" Title="SixFit - Página Inicial">
+							<h3>TELEFONE</h3>
+							<p>Telefone da Faculdade</p>
+						</div>
+						<div class="contato3">
+							<img src="img/icon3.png" alt="Logo" Title="SixFit - Página Inicial">
+							<h3>EMAIL</h3>
+							<p>sistemasiftm@gmail.com</p>
+						</div>
+					</div>
+
+					<div class="col-dm-2 col-dg-1 col-deg-1 esconde"></div>
+				</div>
+
+			</div>
+			<div class="col-dg-1 col-deg-1 esconde escondemeio"></div>
+		</div>
+		<div class="linha borda">
+			<div class="col-dm-2 col-dg-3 col-deg-3 esconde"></div>
+
+			<div class="col-dp-12 col-dm-8 col-dg-6 col-deg-6">
+				<div class="copyright">
+					<p>Copyright ©
+						<a href="#home" title="Sixfit - Página Inicial">
+							<span>SIXFIT</span>
+						</a>
+						, Instituto Federal de Educação, Ciência e Tecnologia 2016</p>
+				</div>
+			</div>
+
+			<div class="col-dm-2 col-dg-3 col-deg-3 esconde">
+				<div class="iftm">
+					<a href="http://www.iftm.edu.br/uberlandiacentro">
+						<img src="img/iftm.png" title="Conheça mais sobre a nossa Universidade" alt="Imagem Logo" onclick="newPopup()">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<script src="jquery-3.1.0.js"></script>
+	<script src="jquery.mask.js"></script>
+	<script>
+		$("#form input:eq(0)").mask(
+			"C",
+			{
+				translation: {
+					"C": {
+						pattern: /[A-Z\s]/i,
+						recursive: true
+					}
+				},
+				placeholder: "Somente letras e espaços"
+			}
+		);
+
+		$("#form input:eq(1)").mask(
+			"00 0000-0000",
+			{
+				placeholder: "DD DDDD-DDDD"
+			}
+		);
+
+		$("#form input:eq(2)").mask(
+			"00/00/0000",
+			{
+				placeholder: "DD/MM/AAAA"
+			}
+		);
+
+		$("#form input:eq(3)").mask(
+			"D00,00",
+			{
+				placeholder: "RRR,CC",
+				reverse: true,
+				translation: {
+					"D": {
+						pattern: /\d/,
+						recursive: true
+					}
+				},
+			}
+		);
+
+		$("#form").submit(
+			verificaForm
+		);
+
+		function animaAviso(aviso, msg) {
+			aviso.hide(0);
+			aviso.text(msg);
+			aviso.fadeIn(1500);
+			aviso.animate({ fontSize: "200%" }, 500);
+			aviso.animate({ fontSize: "100%" }, 500);
+		}
+
+		function verificaNome(nome) {
+			var span = $("#form span:eq(0)");
+			var regex = /^[a-z\s]{2,}$/i;
+
+			if (regex.test(nome)) {
+				span.text("");
+				return true;
+			}
+			else {
+				animaAviso(span, "Nome inválido");
+				return false;
+			}
+		}
+
+		function verificaCPF(cpf) {
+			var span = $("#form span:eq(1)");
+			var regex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+
+			if (regex.test(cpf)) {
+				span.text("");
+				return true;
+			}
+			else {
+				animaAviso(span, "CPF inválido");
+				return false;
+			}
+		}
+
+		function verificaAdmissao(admissao) {
+			var span = $("#form span:eq(2)");
+			var regex = /^\d{2}\/\d{2}\/\d{4}$/;
+
+			if (regex.test(admissao)) {
+				span.text("");
+				return true;
+			}
+			else {
+				animaAviso(span, "Data inválida");
+				return false;
+			}
+		}
+
+		function verificaSalario(salario) {
+			var span = $("#form span:eq(3)");
+			var regex = /^\d{3,},\d{2}$/;
+
+			if (regex.test(salario)) {
+				span.text("");
+				var numsal = Number(salario.replace(/,/, "."));
+				if (numsal >= 937.0) {
+					return true;
+				}
+				else {
+					animaAviso(span, "Salário deve ser ao menos R$937,00");
+					return false;
+				}
+			}
+			else {
+				animaAviso(span, "Salário inválido");
+				return false;
+			}
+		}
+
+		function verificaForm() {
+			var nome = $("#form input:eq(0)").val();
+			var tel = $("#form input:eq(1)").val();
+			var admissao = $("#form input:eq(2)").val();
+			var salario = $("#form input:eq(3)").val();
+
+			var testenome = verificaNome(nome);
+			var testecpf = verificaCPF(cpf);
+			var testeadmissao = verificaAdmissao(admissao);
+			var testesalario = verificaSalario(salario);
+
+			if (testenome && testecpf && testeadmissao && testesalario) {
+				cadastraFuncionario(nome, cpf, admissao, salario);
+			}
+
+			return false;
+		}
+
+		function cadastraFuncionario(nome, cpf, admissao, salario) {
+			var existe = false;
+			$("#funcionarios ul").each(
+				function (i) {
+					var cpfatual = $(this).find("li:first").text();
+					if (cpfatual == cpf) {
+						existe = true;
+						alteraCadastro(i, nome, cpf, admissao, salario);
+						return false; //Break no each
+					}
+				}
+			)
+
+			if (!existe) {
+				insereCadastro(nome, cpf, admissao, salario);
+			}
+		}
+
+		function insereCadastro(nome, cpf, admissao, salario) {
+			$("#funcionarios").append("<li>" + nome + "</li>");
+			$("#funcionarios li:last").addClass("jovem");
+			$("#funcionarios .jovem:last").hide(0);
+			$("#funcionarios li:last").append("<ul><li>" + cpf + "</li><li>" + admissao + "</li><li>R$" + salario + "</li></ul>");
+			$("#funcionarios .jovem:last").show(1000);
+			$("#funcionarios .jovem:last").dblclick(infoForm);
+		}
+
+		function alteraCadastro(indice, nome, cpf, admissao, salario) {
+			$("#funcionarios .jovem:eq(" + indice + ")").slideUp(500,
+				function () {
+					$(this).html(nome + "<ul><li>" + cpf + "</li><li>" + admissao + "</li><li>R$" + salario + "</li></ul>");
+					$(this).slideDown(500);
+				}
+			);
+		}
+
+		function infoForm() {
+			var confirma = confirm("Substituir as informações no formulário?");
+
+			if (confirma) {
+				var htmlnome = $(this).html();
+				var nome = htmlnome.split(/<ul>/)[0];
+				var cpf = $(this).find("li:eq(0)").text();
+				var admissao = $(this).find("li:eq(1)").text();;
+				var salario = $(this).find("li:eq(2)").text();;
+
+				$("#form input:eq(0)").val(nome);
+				$("#form input:eq(1)").val(cpf);
+				$("#form input:eq(2)").val(admissao);
+				$("#form input:eq(3)").val(salario);
+			}
+		}
+	</script>
+
+</body>
+
+</html>
